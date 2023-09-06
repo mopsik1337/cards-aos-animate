@@ -10,14 +10,15 @@ html, body{
 
 .card:hover {
     transform: translate3d(0px, -10px, 0px);
-    transition: .2s;
-  }
-  .card:not(:hover) {
-    transition: .2s;
-  }
+    transition: transform .3s ease-in-out;
+}
+
+.card:not(:hover) {
+    transition: transform .3s ease-in-out;
+}
 
 .cards {
-    display: inline-block!important;
+    display: flex;
     margin-top: 100px;
     top: 30%;
     left: 50%;
